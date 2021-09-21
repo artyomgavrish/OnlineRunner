@@ -54,11 +54,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Main.cs" />
+    <Compile Include="Assets\Scripts\Utils\ContactPoller.cs" />
     <Compile Include="Assets\Scripts\Controllers\SpriteAnimatorController.cs" />
     <Compile Include="Assets\Scripts\Configs\SpriteAnimatorConfig.cs" />
-    <Compile Include="Assets\Scripts\View\LevelObjectView.cs" />
     <Compile Include="Assets\Scripts\Utils\Utils.cs" />
     <Compile Include="Assets\Scripts\Controllers\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\View\LevelObjectView.cs" />
+    <Compile Include="Assets\Scripts\View\CannonView.cs" />
+    <Compile Include="Assets\Scripts\Controllers\BulletController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\CannonController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\BulletEmitterController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
