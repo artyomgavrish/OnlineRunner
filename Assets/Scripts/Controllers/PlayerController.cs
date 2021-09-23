@@ -52,12 +52,14 @@ namespace PlatformerMVC
             _isJump = Input.GetAxis("Vertical") > 0;
             isMoving = Mathf.Abs(_xAxisInput) > _movingTreshold;
 
+            if (isMoving)
+            {
+                MoveTowards();
+            }
+
             if (_contactPoller.IsGrounded)
             {
-                if (isMoving)
-                {
-                    MoveTowards();
-                }
+
                 _spriteAnimator.StartAnimation(_view._spriteRenderer, isMoving ? AnimState.Run : AnimState.Idle, true, _animationSpeed);
 
                 if (_isJump && Mathf.Abs(_yVelocity) <= _jumpTreshold)
