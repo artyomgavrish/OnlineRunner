@@ -1,0 +1,2 @@
+C:\Users\Artyom\myUnityProject\OnlineRunner\obj\Debug\AstarPathfindingProjectEditor.csprojAssemblyReference.cache
+C:\Users\Artyom\myUnityProject\OnlineRunner\obj\Debug\AstarPathfindingProjectEditor.csproj.CoreCompileInputs.cache

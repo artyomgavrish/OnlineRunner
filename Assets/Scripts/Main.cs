@@ -8,13 +8,17 @@ namespace PlatformerMVC
         [SerializeField] private int _animationSpeed = 10;
         [SerializeField] private LevelObjectView _playerView;
         [SerializeField] private CannonView _cannonView;
+        [SerializeField] private GeneratorLevelView _generatorView;
+        
         private SpriteAnimatorController _playerAnimator;
 
         private PlayerController _playerController;
         private CannonController _cannon;
         private BulletEmitterController _bulletEmitterController;
+        private CameraController _cameraController;
+        private TilemapGenerator _tilemapGenerator;
 
-        
+
         void Awake()
         {
             _playerConfig = Resources.Load<SpriteAnimatorConfig>("PlayerAnimCfg");
@@ -31,6 +35,11 @@ namespace PlatformerMVC
             _playerController = new PlayerController(_playerView, _playerAnimator);
             _cannon = new CannonController(_cannonView._mazzleTransform, _playerView.transform);
             _bulletEmitterController = new BulletEmitterController(_cannonView._bullets, _cannonView._emitterTransform);
+            _cameraController = new CameraController(_playerView.transform, Camera.main.transform);
+            _tilemapGenerator = new TilemapGenerator(_generatorView);
+            _tilemapGenerator.Start();
+        
+        
         }
 
 
@@ -39,6 +48,9 @@ namespace PlatformerMVC
             _playerController.Update();
             _cannon.Update();
             _bulletEmitterController.Update();
+            _cameraController.Update();
+
+
         } 
 
         private void FixedUpdate()

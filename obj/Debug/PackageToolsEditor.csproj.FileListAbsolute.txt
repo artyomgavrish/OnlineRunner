@@ -1,0 +1,2 @@
+C:\Users\Artyom\myUnityProject\OnlineRunner\obj\Debug\PackageToolsEditor.csprojAssemblyReference.cache
+C:\Users\Artyom\myUnityProject\OnlineRunner\obj\Debug\PackageToolsEditor.csproj.CoreCompileInputs.cache
