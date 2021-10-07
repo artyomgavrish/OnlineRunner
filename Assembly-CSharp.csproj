@@ -55,19 +55,30 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Controllers\CameraController.cs" />
     <Compile Include="Assets\Scripts\Main.cs" />
+    <Compile Include="Assets\Scripts\View\QuestObjectView.cs" />
+    <Compile Include="Assets\Scripts\Interfaces\IQuestModel.cs" />
     <Compile Include="Assets\Scripts\Utils\ContactPoller.cs" />
+    <Compile Include="Assets\Scripts\Interfaces\IQuestStory.cs" />
     <Compile Include="Assets\Scripts\Controllers\TilemapGenerator.cs" />
     <Compile Include="Assets\Scripts\Controllers\SpriteAnimatorController.cs" />
     <Compile Include="Assets\Scripts\Controllers\BulletEmitterController.cs" />
+    <Compile Include="Assets\Scripts\Configs\QuestItemConfig.cs" />
     <Compile Include="Assets\Scripts\View\CannonView.cs" />
     <Compile Include="Assets\Scripts\Configs\SpriteAnimatorConfig.cs" />
     <Compile Include="Assets\Scripts\Utils\Utils.cs" />
     <Compile Include="Assets\Scripts\Controllers\BulletController.cs" />
     <Compile Include="Assets\Scripts\Controllers\PlayerController.cs" />
     <Compile Include="Assets\Scripts\View\LevelObjectView.cs" />
+    <Compile Include="Assets\Scripts\Controllers\QuestController.cs" />
+    <Compile Include="Assets\Scripts\Interfaces\IQuest.cs" />
+    <Compile Include="Assets\Scripts\Configs\QuestStoryConfig.cs" />
     <Compile Include="Assets\Scripts\View\GeneratorLevelView.cs" />
+    <Compile Include="Assets\Scripts\View\QuestView.cs" />
     <Compile Include="Assets\Scripts\Controllers\CannonController.cs" />
+    <Compile Include="Assets\Scripts\Configs\QuestConfig.cs" />
     <Compile Include="Assets\Scripts\Controllers\MarchingSquaresGenerator.cs" />
+    <Compile Include="Assets\Scripts\Model\KiwiQuestModel.cs" />
+    <Compile Include="Assets\Scripts\Controllers\QuestConfiguratorController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
